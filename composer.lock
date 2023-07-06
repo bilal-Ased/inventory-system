@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a33c8e42a6af40819c8cc3e53828c315",
+    "content-hash": "f2e81b8b188b0ac92a010278226221e1",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -603,6 +603,77 @@
                 }
             ],
             "time": "2022-04-01T19:23:25+00:00"
+        },
+        {
+            "name": "croustibat/filament-jobs-monitor",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/croustibat/filament-jobs-monitor.git",
+                "reference": "13df4a6e1efc2feaefac0c8ae09242ac909baace"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/croustibat/filament-jobs-monitor/zipball/13df4a6e1efc2feaefac0c8ae09242ac909baace",
+                "reference": "13df4a6e1efc2feaefac0c8ae09242ac909baace",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.0",
+                "illuminate/contracts": "^9.0 || ^10.0",
+                "php": "^8.0",
+                "ryangjchandler/filament-progress-column": "^0.3.2",
+                "spatie/laravel-package-tools": "^1.13.5"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Croustibat\\FilamentJobsMonitor\\FilamentJobsMonitorServiceProvider",
+                        "Croustibat\\FilamentJobsMonitor\\QueueMonitorProvider"
+                    ],
+                    "aliases": {
+                        "QueueMonitor": "Croustibat\\FilamentJobsMonitor\\QueueMonitorProvider\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Croustibat\\FilamentJobsMonitor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste",
+                    "email": "baptiste@derniercri.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Background Jobs monitoring like Horizon for all drivers for FilamentPHP",
+            "homepage": "https://github.com/croustibat/filament-jobs-monitor",
+            "keywords": [
+                "croustibat",
+                "filament-jobs-monitor",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/croustibat/filament-jobs-monitor/issues",
+                "source": "https://github.com/croustibat/filament-jobs-monitor/tree/1.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/croustibat",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-29T14:29:45+00:00"
         },
         {
             "name": "danharrin/date-format-converter",
@@ -2091,6 +2162,78 @@
                 }
             ],
             "time": "2021-10-07T12:57:01+00:00"
+        },
+        {
+            "name": "icetalker/filament-chatgpt-bot",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/icetalker/filament-chatgpt-bot.git",
+                "reference": "a60ea658993c5e3723b7cfa056095a54d3775798"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/icetalker/filament-chatgpt-bot/zipball/a60ea658993c5e3723b7cfa056095a54d3775798",
+                "reference": "a60ea658993c5e3723b7cfa056095a54d3775798",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.0|^10.0",
+                "orhanerday/open-ai": "^4.7",
+                "php": ">=7.4",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Icetalker\\FilamentChatgptBot\\FilamentChatgptBotServiceProvider"
+                    ],
+                    "aliases": {
+                        "FilamentChatgptBot": "Icetalker\\FilamentChatgptBot\\Facades\\FilamentChatgptBot"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Icetalker\\FilamentChatgptBot\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Hwang",
+                    "email": "termlong.com@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Integrate with OpenAI ChatGPT",
+            "homepage": "https://github.com/icetalker/filament-chatgpt-bot",
+            "keywords": [
+                "filament-chatgpt-bot",
+                "icetalker",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/icetalker/filament-chatgpt-bot/issues",
+                "source": "https://github.com/icetalker/filament-chatgpt-bot/tree/v0.1.2"
+            },
+            "time": "2023-06-12T03:29:02+00:00"
         },
         {
             "name": "jeffgreco13/filament-breezy",
@@ -3930,6 +4073,65 @@
             "time": "2023-02-08T01:06:31+00:00"
         },
         {
+            "name": "orhanerday/open-ai",
+            "version": "4.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orhanerday/open-ai.git",
+                "reference": "896665e293689d68de4b1e9813a2e0b00a06f5ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orhanerday/open-ai/zipball/896665e293689d68de4b1e9813a2e0b00a06f5ef",
+                "reference": "896665e293689d68de4b1e9813a2e0b00a06f5ef",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "pestphp/pest": "^1.20",
+                "spatie/ray": "^1.28"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Orhanerday\\OpenAi\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Orhan Erday",
+                    "email": "orhanerday@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OpenAI GPT-3 Api Client in PHP",
+            "homepage": "https://github.com/orhanerday/open-ai",
+            "keywords": [
+                "open-ai",
+                "orhanerday"
+            ],
+            "support": {
+                "issues": "https://github.com/orhanerday/open-ai/issues",
+                "source": "https://github.com/orhanerday/open-ai/tree/4.8"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/orhanerday",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-11T09:25:47+00:00"
+        },
+        {
             "name": "paragonie/constant_time_encoding",
             "version": "v2.6.3",
             "source": {
@@ -5037,6 +5239,85 @@
                 }
             ],
             "time": "2023-02-14T16:54:54+00:00"
+        },
+        {
+            "name": "ryangjchandler/filament-progress-column",
+            "version": "v0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryangjchandler/filament-progress-column.git",
+                "reference": "0b2f112cbb2322af3d4526ab5fba51e0947ca6c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryangjchandler/filament-progress-column/zipball/0b2f112cbb2322af3d4526ab5fba51e0947ca6c2",
+                "reference": "0b2f112cbb2322af3d4526ab5fba51e0947ca6c2",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.0",
+                "illuminate/contracts": "^9.0|^10.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.9.2"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^6.0|^7.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^7.0|^8.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RyanChandler\\FilamentProgressColumn\\FilamentProgressColumnServiceProvider"
+                    ],
+                    "aliases": {
+                        "FilamentProgressColumn": "RyanChandler\\FilamentProgressColumn\\Facades\\FilamentProgressColumn"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RyanChandler\\FilamentProgressColumn\\": "src",
+                    "RyanChandler\\FilamentProgressColumn\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Chandler",
+                    "email": "support@ryangjchandler.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add a progress bar column to your Filament tables.",
+            "homepage": "https://github.com/ryangjchandler/filament-progress-column",
+            "keywords": [
+                "filament-progress-column",
+                "laravel",
+                "ryangjchandler"
+            ],
+            "support": {
+                "issues": "https://github.com/ryangjchandler/filament-progress-column/issues",
+                "source": "https://github.com/ryangjchandler/filament-progress-column/tree/v0.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ryangjchandler",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-04-03T12:55:40+00:00"
         },
         {
             "name": "spatie/invade",
